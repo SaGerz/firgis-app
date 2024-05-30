@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <title>Creator</title>
+
+            <!-- App favicon -->
+            <link rel="shortcut icon" href="..\Static\Images\Logo Hitam.ico">
+
+            <!--Swiper CSS-->
+            <link rel="stylesheet" href="..\Static\css\swiper-bundle.min.css">
+
+            <!--CSS-->
+            <link rel="stylesheet" href="..\Static\css\penulis.css">
+            <link href="..\assets\css\icons.min.css" rel="stylesheet" type="text/css">
+
+        </head>
+
+        <body>
+        <div class="content">
+            <div class="header mt-auto py-5 px-4">
+                <!-- Navabar -->
+                <header class="header">
+                  <nav class="navbar navbar-expand-lg navbar-light fixed-top px-3 mb-4">
+                    <div class="container-fluid">
+                   
+                      <a class="navbar-brand" href="{{url_for('home')}}"><img class="logo" src="../Static/Images/Logo Hitam.png" alt="" width="60"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/tut-wuri-handayani-7783.png" alt="" width="50"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/Logo_upi.png" alt="" width="65"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/logo pkp.png" alt="" width="60"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/Kampus-Merdeka.png" alt="" width="65"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end p-4" id="navbarSupportedContent">
+                              <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('welcome')}}">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('our_feature')}}">Features</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('creator')}}">Creator</a>
+                                  </li>
+                              </ul>
+                              <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="{{url_for('penjelasan_live_camera')}}">Live Camera</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('penjelasan_foto_galeri')}}">Photo Gallery</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('details')}}">Fish Morphology</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('morfometrik')}}">Morphometrics and Meristics</a></li>
+                                        <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li><a class="dropdown-item" href="{{url_for('quiz_quizizz')}}">Quiz</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                  </nav>
+                </header>
+            <!-- navbar End -->
+
+                    <!-- Start Content-->
+                    <div class="container-fluid-custom mt-4-custom py-4-custom px-3-custom">
+                        <div class="row-custom px-4-custom pt-4-custom mt-4-custom">
+                            <div class="col-sm-12">
+                                <div class="text-center">
+                                    <h3 class="text-center">Creator</h3>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row row-custom-gap pt-5 pt-5">
+                            <div class="col-lg-5 offset-lg-1">
+                                <!-- Question/Answer -->
+                                <div>
+                                    <img src="../Static/Images/Foto Igii.jpg" class="img-penulis"/>
+                                </div>
+                            </div>
+                            <!--/col-md-5 -->
+        
+                            <div class="col-lg-5">
+                                <!-- Question/Answer -->
+                                <div>
+                                    <p class="paragraf2">Firgi Saridaningsih adalah mahasiswa angkatan 2020 dengan latar belakang jurusan pendidikan kelautan dan perikanan pada Universitas Pendidikan ndonesia. Tujuan dari website yang dirancangnya adalah untuk membantu siswa mengatasi kesulitan dalam belajar mandiri, terutama dalam konteks pembelajaran di bidang perikanan.</p>
+                                </div>        
+                            </div>
+                            <!--/col-md-5-->
+                        </div>
+                        <!-- end row -->
+                        
+                    </div> <!-- container -->
+            </div>
+
+            <div class="Our-Future1"> <!--Judul Laman-->
+                <h1 class="h1-Our-Future">supported by</h1>
+            </div>
+  
+            <div class="slide-conteiner swiper" id="AnalyseSection">
+                <div class="slide-content"> <!--Wilayah Swiper-->
+                 <div class="card-wrapper swiper-wrapper">
+                   <div class="card swiper-slide">
+                     <div class="image-content">
+                       <span class="overlay"></span>
+                       <div class="card-image">
+        
+                         <img src="..\Static\Images\ibu yulda.jpg" alt="" class="card-img">
+                       </div>
+                     </div>
+        
+                     <div class="card-content">
+                       <h2 class="name">YULDA, S.Pd., M.Pd. <br> (Dosen Pembimbing)</h2>
+                       <p class="card-text">S1 - Universitas Pendidikan Indonesia [2017] <br> S2 - Universitas Pendidikan Indonesia [2021] <br> NIPT. 920230219950723201 <br> Email: yulda@upi.edu</p>
+                     </div>
+                   </div>
+                   <div class="card swiper-slide">
+                     <div class="image-content">
+                       <span class="overlay"></span>
+                       <div class="card-image">
+        
+                         <img src="..\Static\Images\pak satibi 2.jpg" alt="" class="card-img">
+                       </div>
+                     </div>
+        
+                     <div class="card-content">
+                       <h2 class="name">AHMAD SATIBI, S.Pd., M.Pd. <br> (Dosen Pembimbing)</h2>
+                       <p class="card-text">S1 - Universitas Pendidikan Indonesia [2015] <br> S2 - Universitas Pendidikan Indonesia [2019] <br> NIPT. 920200819920922101 <br> Email: ahmadsatibi@upi.edu </p>                      
+                     </div>
+                   </div>
+                   <div class="card swiper-slide">
+                     <div class="image-content">
+                       <span class="overlay"></span>
+                       <div class="card-image">
+        
+                         <img src="..\Static\Images\coach angel.jpg" alt="" class="card-img">
+                       </div>
+                     </div>
+        
+                     <div class="card-content">
+                       <h2 class="name">Angel Metanosa Afinda, S.Kom M.Kom <br> (<i>Coach MSIB Orbit Future Academy Batch 5</i>)</h2>
+                       <p class="card-text">S1 Informatika - Telkom University [2021] <br> S2 Informatika - Telkom University [2023] <br> Email: angelmetanosa@gmail.com</p>                     
+                     </div>
+                   </div>
+                   <div class="card swiper-slide">
+                     <div class="image-content">
+                       <span class="overlay"></span>
+                       <div class="card-image">
+        
+                         <img src="..\Static\Images\samuel.png" alt="" class="card-img">
+                       </div>
+                     </div>
+        
+                     <div class="card-content">
+                       <h2 class="name">Samuel Genaro <br> (Alumni <i>MSIB Orbit Future Academy Batch 5</i>)</h2>
+                       <p class="card-text">S1 - Undergraduate at Informatics Enggineering [2021] <br> Email : genarosamuel24@gmail.com</p>                      
+                     </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="swiper-button-next swiper-navBtn"></div>
+                 <div class="swiper-button-prev swiper-navBtn"></div>
+                 <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        
+        
+         <!--Font Awesome-->
+         <script src="https://kit.fontawesome.com/7fec0a1d8d.js" crossorigin="anonymous"></script>
+         <!-- Akhir Font Awesome-->
+        
+        <!--Caveat Google 1-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--Akhir Caveat Google 1-->
+
+        <!--Swiper JS-->
+        <script src="..\Static\JS\swiper-bundle.min.js"></script>
+
+        <!--JavaScript-->
+        <script src="..\Static\JS\creator.js"></script>
+
+
+      <!--JavaScript Navbar-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </body>
+
+
+</html>

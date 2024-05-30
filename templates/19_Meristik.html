@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Meristik</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+        <meta content="Coderthemes" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="..\Static\Images\Logo Hitam.ico">
+
+        <!-- App css -->
+        <link href="..\assets\css\icons.min.css" rel="stylesheet" type="text/css">
+        <link href="..\assets\css\app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="..\assets\css\app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+        <link href="..\Static\css\materi_2.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="{{url_for('home')}}" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="..\Static\Images\Logo Panjang.png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="..\Static\Images\Logo Putih (1).png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                </a>
+
+                <!-- LOGO -->
+                <a href="{{url_for('home')}}" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                        <img src="..\Static\Images\logo panjang hitam.png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="..\Static\Images\Logo Hitam.png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar="">
+
+                    <!--- Sidemenu -->
+                    <ul class="side-nav">
+
+                        <li class="side-nav-title side-nav-item">Navigation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span class="badge bg-success float-end">6</span>
+                                <span> Dashboards </span>
+                            </a>
+                            <div class="collapse" id="sidebarDashboards">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('welcome')}}">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('our_feature')}}">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('creator')}}">Creator</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('penjelasan_live_camera')}}">Live Camera</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('penjelasan_foto_galeri')}}">Photo Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('details')}}">Fish Morphology</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Explanation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Mulut </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarEcommerce">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('mulut_1_2')}}">Superior Mouth</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_1_2')}}">Terminal Mouth</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_3_4')}}">Inferior Mouth</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_3_4')}}">Protrusible Mouth</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_5')}}">Sucker Mouth</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Dada </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarEmail">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Hand-like</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Spiny</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Wing-like</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Normal size</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Paddle</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarProjects" aria-expanded="false" aria-controls="sidebarProjects" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Perut </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarProjects">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_perut')}}">Sucker-like pelvic fins</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_perut')}}">Thickened rays on pelvic fins</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_perut')}}">Moderate sized pelvic fins</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="{{url_for('sirip_dubur')}}" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Dubur </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Punggung </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarTasks">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Spiny and soft-rayed dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Tucked dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Locking spiny dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Very long dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Three dorsal fins</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">No dorsal fin</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Ekor </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarLayouts">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Rounded tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Truncated (triangular) tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Lunate (moon shaped) tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Forked tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Forked tail (unevenly)</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Emarginate tail</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Other</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="mdi-ruler"></i>
+                                <span> Morfometrik & Meristik </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarPages">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('morfometrik')}}">Morfometrik</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('meristik')}}">Meristik</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Evaluation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarIcons" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="mdi mdi-head-question-outline"></i>
+                                <span> Quiz </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarIcons">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('quiz_gform')}}">Google Form</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('quiz_quizizz')}}">Quizziz</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Reference</li>
+
+                        <li class="side-nav-item">
+                            <a href="{{url_for('referensi')}}" class="side-nav-link">
+                                <i class="mdi mdi-book-open-variant"></i>
+                                <span> Referensi </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-menu float-end mb-0">
+                            <li class="notification-list">
+                                <a class="nav-link end-bar-toggle" href="javascript: void(0);">
+                                    <i class="dripicons-gear noti-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </div>
+                    <!-- end Topbar -->
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">FishMorpho</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Explanation</a></li>
+                                            <li class="breadcrumb-item active">Morfometrik dan Meristik</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Morfometrik dan Meristik</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-xxl-8 col-lg-6">
+                                <!-- project card -->
+                                <div class="card d-block">
+                                    <div class="card-body">
+                                        <!-- project title-->
+                                        <h3 class="mt-0">
+                                            Meristik
+                                        </h3>
+
+                                        <p class="text-muted mb-2">
+                                            Ikan yang satu dengan yang lain memiliki bentuk dan ukuran yang berbeda, berarti setiap jenis ikan memiliki spesifikasi tertentu 
+                                            baik karakteristik, bentuk dan ukuran tubuh ikan yang spesifik di alam. Maka dari itu karakteristik, bentuk dan ukuran tubuh 
+                                            ikan dapat digunakan untuk mengidentifikasi jenis ikan.
+                                        </p>
+
+                                        <p class="text-muted mb-4">
+                                            Identifikasi atau penentuan nama jenis dan klasifikasi ikan salah satunya dapat dilakukan berdasarkan sifat-sifat meristik dan morfometrik ikan. Sifat meristik dan morfometrik merupakan cara sederhana yang dapat dilakukan untuk tujuan identifikasi jenis ikan secara umum. <br> Meristik adalah ciri yang berkaitan dengan jumlah bagian tubuh tertentu atau pengamatan tentang jumlah dan jenis duri, jari-jari sirip pada setiap jenis sirip yang ada, jumlah sisik pada gurat sisi seperti jumlah jari-jari keras dan jumlah jari-jari lemah pada sirip punggung, dan sebagainya.
+                                        </p>
+
+                                        <h4 class="mt-0 mb-3">Pengukuran Meristik</h4>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/OfEmMo-dkno?si=bAMc1L21G00JVPw4"></iframe>
+                                        </div>                                    
+
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+
+                                <!-- end card-->
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6 col-xxl-4">
+                                <div class="card">
+                                    <div class="card-body" style="text-align: justify;">
+                                        <h5 class="card-title mb-3">Meristik</h5>
+                                        <h4 class="mt-0 mb-3">Pengukuran Meristik</h4>
+                                        <div class="ratio ratio-16x9">
+                                            <img class="faq-answer2 mb-4" src="..\Static\Images\meristik.png" alt="">
+                                        </div>
+                                        <h4 class="mt-0 mb-3">Deskripsi Meristik Ikan <em>Siganus luridus</em></h4>
+                                        <p>Rumus Meristik ikan <em>Siganus luridus</em> misalnya : <br> D, XIV+10; A, VII+8-9; P, 16-17; V, I+3+I; GR, 18-22.</p>
+                                        <p>Rumus meristik adalah cara untuk mendeskripsikan jumlah dan susunan sirip serta elemen morfologis lainnya pada ikan menggunakan singkatan dan angka. Berikut adalah penjelasan dari rumus meristik untuk ikan <em>Siganus luridus</em>:</p>
+                                        <ul>
+                                            <li><strong>D, XIV+10:</strong>
+                                                <ul class="description">
+                                                    <li><strong>D:</strong> Singkatan dari sirip dorsal (sirip punggung).</li>
+                                                    <li><strong>XIV:</strong> Menunjukkan adanya 14 duri keras (spina) pada sirip dorsal.</li>
+                                                    <li><strong>10:</strong> Menunjukkan adanya 10 sinar lunak pada sirip dorsal.</li>
+                                                    <li>Jadi, sirip dorsal ikan ini memiliki 14 duri keras diikuti oleh 10 sinar lunak.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>A, VII+8-9:</strong>
+                                                <ul class="description">
+                                                    <li><strong>A:</strong> Singkatan dari sirip anal.</li>
+                                                    <li><strong>VII:</strong> Menunjukkan adanya 7 duri keras pada sirip anal.</li>
+                                                    <li><strong>8-9:</strong> Menunjukkan adanya 8 hingga 9 sinar lunak pada sirip anal.</li>
+                                                    <li>Jadi, sirip anal ikan ini memiliki 7 duri keras diikuti oleh 8 hingga 9 sinar lunak.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>P, 16-17:</strong>
+                                                <ul class="description">
+                                                    <li><strong>P:</strong> Singkatan dari sirip pectoral (sirip dada).</li>
+                                                    <li><strong>16-17:</strong> Menunjukkan adanya 16 hingga 17 sinar lunak pada sirip pectoral.</li>
+                                                    <li>Jadi, sirip pectoral ikan ini memiliki 16 hingga 17 sinar lunak.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>V, I+3+I:</strong>
+                                                <ul class="description">
+                                                    <li><strong>V:</strong> Singkatan dari sirip ventral (sirip perut atau sirip pelvis).</li>
+                                                    <li><strong>I:</strong> Menunjukkan adanya 1 duri keras di bagian depan sirip ventral.</li>
+                                                    <li><strong>3:</strong> Menunjukkan adanya 3 sinar lunak di tengah sirip ventral.</li>
+                                                    <li><strong>I:</strong> Menunjukkan adanya 1 duri keras di bagian belakang sirip ventral.</li>
+                                                    <li>Jadi, sirip ventral ikan ini memiliki susunan 1 duri keras, 3 sinar lunak, dan 1 duri keras.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>GR, 18-22:</strong>
+                                                <ul class="description">
+                                                    <li><strong>GR:</strong> Singkatan dari gill rakers (jari-jari insang).</li>
+                                                    <li><strong>18-22:</strong> Menunjukkan adanya 18 hingga 22 jari-jari insang.</li>
+                                                    <li>Jadi, ikan ini memiliki antara 18 hingga 22 jari-jari insang.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- end card-->
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="col">
+                            <!-- project card -->
+                            <div class="card d-block">
+                                <div class="card-body">
+                                    <!-- project title-->
+                                    <h3 class="mt-0">
+                                        Morfometrik
+                                    </h3>
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="hoverable-rows-preview">
+                                            <div class="table-responsive-sm">
+                                                <table class="table table-hover table-centered mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Urutan</th>
+                                                            <th>Uraian Meristik</th>
+                                                            <th>Description of Meristics</th>
+                                                            <th>Pengertian</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Jumlah jari-jari keras sirip punggung</td>
+                                                            <td>Dorsal fin spines</td>
+                                                            <td>Menghitung jumlah jari-jari keras (spina) pada sirip punggung. Spina biasanya tidak bercabang dan lebih kaku.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Jumlah jari-jari lunak sirip punggung</td>
+                                                            <td>Dorsal fin soft rays</td>
+                                                            <td>Menghitung jumlah jari-jari lunak pada sirip punggung. Jari-jari lunak biasanya lebih fleksibel dan dapat bercabang.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Jumlah jari-jari keras sirip dada</td>
+                                                            <td>Pectoral fin spines</td>
+                                                            <td>Menghitung jumlah jari-jari keras pada sirip dada.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Jumlah jari-jari lunak sirip dada</td>
+                                                            <td>Pectoral fin soft rays</td>
+                                                            <td>Menghitung jumlah jari-jari lunak pada sirip dada.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>Jumlah jari-jari sirip perut</td>
+                                                            <td>Pelvic fin rays</td>
+                                                            <td>Menghitung jumlah jari-jari (baik keras maupun lunak) pada sirip perut.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>Jumlah jari-jari sirip anus</td>
+                                                            <td>Anal fin rays</td>
+                                                            <td>Menghitung jumlah jari-jari (baik keras maupun lunak) pada sirip anus.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>Jumlah jari-jari sirip ekor</td>
+                                                            <td>Caudal fin rays</td>
+                                                            <td>Menghitung jumlah jari-jari (biasanya lunak) pada sirip ekor.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>Jumlah sungut </td>
+                                                            <td>Barbels</td>
+                                                            <td>Menghitung jumlah sungut pada ikan, yang biasanya berada di sekitar mulut dan digunakan untuk mendeteksi makanan.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>Jumlah sisik pada garis rusuk</td>
+                                                            <td>Lateral line scales</td>
+                                                            <td>Menghitung jumlah sisik pada garis rusuk (lateral line) ikan.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>Jumlah sisik transversal</td>
+                                                            <td>Transverse scales</td>
+                                                            <td>Menghitung jumlah sisik dalam baris transversal dari garis rusuk ke punggung atau perut.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>11</td>
+                                                            <td>Jumlah gurat sisi </td>
+                                                            <td>Lateral line pores</td>
+                                                            <td>Menghitung jumlah pori-pori pada gurat sisi (lateral line) ikan.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td>Jumlah vertebrae </td>
+                                                            <td>Vertebrae count</td>
+                                                            <td>Menghitung jumlah tulang belakang (vertebrae) pada ikan.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>                                    
+                                            </div> <!-- end table-responsive-->                     
+                                        </div> <!-- end preview-->
+                                    
+                                        <div class="tab-pane" id="hoverable-rows-code">
+                                            <pre class="mb-0">
+                                                <span class="html escape">
+                                                    &lt;table class=&quot;table table-hover table-centered mb-0&quot;&gt;
+                                                        &lt;thead&gt;
+                                                            &lt;tr&gt;
+                                                                &lt;th&gt;Product&lt;/th&gt;
+                                                                &lt;th&gt;Price&lt;/th&gt;
+                                                                &lt;th&gt;Quantity&lt;/th&gt;
+                                                                &lt;th&gt;Amount&lt;/th&gt;
+                                                            &lt;/tr&gt;
+                                                        &lt;/thead&gt;
+                                                        &lt;tbody&gt;
+                                                            &lt;tr&gt;
+                                                                &lt;td&gt;ASOS Ridley High Waist&lt;/td&gt;
+                                                                &lt;td&gt;$79.49&lt;/td&gt;
+                                                                &lt;td&gt;&lt;span class=&quot;badge bg-primary&quot;&gt;82 Pcs&lt;/span&gt;&lt;/td&gt;
+                                                                &lt;td&gt;$6,518.18&lt;/td&gt;
+                                                            &lt;/tr&gt;
+                                                            &lt;tr&gt;
+                                                                &lt;td&gt;Marco Lightweight Shirt&lt;/td&gt;
+                                                                &lt;td&gt;$128.50&lt;/td&gt;
+                                                                &lt;td&gt;&lt;span class=&quot;badge bg-primary&quot;&gt;37 Pcs&lt;/span&gt;&lt;/td&gt;
+                                                                &lt;td&gt;$4,754.50&lt;/td&gt;
+                                                            &lt;/tr&gt;
+                                                            &lt;tr&gt;
+                                                                &lt;td&gt;Half Sleeve Shirt&lt;/td&gt;
+                                                                &lt;td&gt;$39.99&lt;/td&gt;
+                                                                &lt;td&gt;&lt;span class=&quot;badge bg-primary&quot;&gt;64 Pcs&lt;/span&gt;&lt;/td&gt;
+                                                                &lt;td&gt;$2,559.36&lt;/td&gt;
+                                                            &lt;/tr&gt;
+                                                            &lt;tr&gt;
+                                                                &lt;td&gt;Lightweight Jacket&lt;/td&gt;
+                                                                &lt;td&gt;$20.00&lt;/td&gt;
+                                                                &lt;td&gt;&lt;span class=&quot;badge bg-primary&quot;&gt;184 Pcs&lt;/span&gt;&lt;/td&gt;
+                                                                &lt;td&gt;$3,680.00&lt;/td&gt;
+                                                            &lt;/tr&gt;
+                                                        &lt;/tbody&gt;
+                                                    &lt;/table&gt;
+                                                </span>
+                                            </pre> <!-- end highlight-->
+                                        </div> <!-- end preview code-->
+                                    </div> <!-- end tab-content-->
+                        </div> <!-- end card-->
+                            
+                            <!-- end card-->
+                        </div> <!-- end col -->
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> © FishMorpho
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end footer-links d-none d-md-block">
+                                    <a href="..\templates\2_welcome.html">About</a>
+                                    <a href="https://wa.me/6288802022311?text=Halo%2C%20terima%20kasih%20atas%20partisipasi%20Anda%20dalam%20membantu%20saya%20mengembangkan%20media%20pembelajaran%20ini.%20Jika%20Anda%20memiliki%20saran%20atau%20masukan%20yang%20lebih%20detail%2C%20jangan%20ragu%20untuk%20menghubungi%20saya.%20Saya%20sangat%20menghargai%20kontribusi%20Anda%21">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- Right Sidebar -->
+        <div class="end-bar">
+
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="end-bar-toggle float-end">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0">Settings</h5>
+            </div>
+
+            <div class="rightbar-content h-100" data-simplebar="">
+
+                <div class="p-3">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
+                    </div>
+
+                    <!-- Settings -->
+                    <h5 class="mt-3">Color Scheme</h5>
+                    <hr class="mt-1">
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light" id="light-mode-check" checked="">
+                        <label class="form-check-label" for="light-mode-check">Light Mode</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark" id="dark-mode-check">
+                        <label class="form-check-label" for="dark-mode-check">Dark Mode</label>
+                    </div>
+       
+
+                    <!-- Width -->
+                    <h5 class="mt-4">Width</h5>
+                    <hr class="mt-1">
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check" checked="">
+                        <label class="form-check-label" for="fluid-check">Fluid</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
+                        <label class="form-check-label" for="boxed-check">Boxed</label>
+                    </div>
+        
+
+                    <!-- Left Sidebar-->
+                    <h5 class="mt-4">Left Sidebar</h5>
+                    <hr class="mt-1">
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="theme" value="default" id="default-check">
+                        <label class="form-check-label" for="default-check">Default</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="theme" value="light" id="light-check" checked="">
+                        <label class="form-check-label" for="light-check">Light</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" name="theme" value="dark" id="dark-check">
+                        <label class="form-check-label" for="dark-check">Dark</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="fixed" id="fixed-check" checked="">
+                        <label class="form-check-label" for="fixed-check">Fixed</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="condensed" id="condensed-check">
+                        <label class="form-check-label" for="condensed-check">Condensed</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="scrollable" id="scrollable-check">
+                        <label class="form-check-label" for="scrollable-check">Scrollable</label>
+                    </div>
+
+                </div> <!-- end padding-->
+
+            </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+
+        <!-- bundle -->
+        <script src="..\assets\js\vendor.min.js"></script>
+        <script src="..\assets\js\app.min.js"></script>
+        <script src="https://kit.fontawesome.com/7fec0a1d8d.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>

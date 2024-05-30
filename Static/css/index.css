@@ -1,0 +1,720 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);  
+}
+
+/* section {
+    padding-top: 10rem;
+} */
+
+.jumbotron {
+    background-image: url(../Images/1.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.title {
+    margin-top: 85px;
+    overflow: hidden;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* .line {
+    float: left;
+    width: 6px;
+    height: 185px;
+    border: 2px solid #fff;
+    background-color: #fff;
+} */
+
+.border-typePro {
+    background-color: #fff;
+    border-radius: 35px;
+    width: 300px;
+    padding: 22px ;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.inka {
+    color: #fff;
+    font-family: garamond;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+    
+}
+
+.inspeksi {
+    color: #fff;
+    font-family: garamond;
+}
+
+.image-example, .img1, .img2, .img3, .img4 {
+    /* width: 300px; */
+    height: 255px;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+/* Awal Kode PAGE 2 (About Us)*/
+
+.section-welcome {
+    background-image: url(../Images/2.png);
+
+}
+
+.line2 {
+    float: left;
+    width: 6px;
+    height: 87px;
+    border: 2px solid #3b0606;
+    background-color: #3b0606;
+}
+
+.icon p {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.paragraf1 p {
+    text-align: justify;
+    padding: 3px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.paragraf2 p {
+    text-align: justify;
+    padding: 1px;
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.conteiner-get {
+    text-align: left;
+    padding: 0;
+}
+
+.ul-get {
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    
+}
+
+.a-get {
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 10px; /* Padding untuk memberi ruang di dalam kotak */
+    width: 200px;
+    border-radius: 10px;
+}
+
+.a-get:hover {
+    background-color: rgb(57, 63, 82);
+    transition: .2s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 8px;
+}
+
+.box-paragraf1 {
+    width: 600px;
+    height: 275px;
+
+}
+
+.welcome-text {
+    color: #000;
+    line-height: 14px;
+    font-size: 20px;
+    height: 100vh;
+
+}
+.paragraf-section {
+    display: flex;
+    column-gap: 100px;
+
+}
+
+.paragraf-section2 {
+    display: flex;
+    flex-direction : column;
+    width: 600px;
+    height: 275px;
+    font-size: 5px;
+
+}
+
+.footer2-1 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    color: #13588a;
+}
+
+.footer2-2 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+.conteiner-footer2 { 
+    height: 180px;
+}
+
+/* End Kode PAGE 2 (About Us) */
+
+/* Section Our Feature Start */
+.Our-Future-Utama {
+    background-image: url(../Images/3.svg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.h1-Our-Future {
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
+
+.p-Our-Future {
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    margin: 80px;
+    align-items: center;
+    grid-gap: 50px;
+    justify-content: center;
+    transition: transform;
+}
+
+.konten1, .konten2 {
+    cursor: progress;
+}
+
+.grid > article:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:1000px) {
+    .grid {
+        grid-template-columns: repeat(2.1fr)
+    }
+}
+
+.img-OurF1, .img-OurF2 {
+    width: 215px;
+    height: 147px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.grid > article {
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 20px;
+    background-color: white;
+    height: 275px;
+    width: 244px;
+    padding: 15px;
+}
+
+.h1-Livecamera, .h1-FotoGaleri {
+    color: black;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.h2-Livecamera, .h2-FotoGaleri {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* Section Our Fetuare end */
+
+/* Section Penjelasan Live Camera START */
+
+.Container-LiveCamera {
+    background-image: url(../Images/4.svg);
+    height: 100vh;
+}
+
+.Live-Camera {
+    display: flex;
+}
+
+.Details-LiveCamera {
+    column-gap: 0px;
+    display: flex;
+}
+
+.S-Live-Camera {
+    height: 450px;
+    width: 575px;
+
+}
+
+.imgCamera {
+    height: 450px;
+    width: 575px;
+    align-items: left;
+    justify-content: left;
+}
+
+.img-live-camera {
+    height: 450px;
+    width: 700px;
+
+}
+
+.S-Live-Camera h1 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    background: linear-gradient(to right, #7f9bf7, #3333ff); /* Sesuaikan warna gradasi sesuai keinginan Anda */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+
+}
+    
+.p-penjelasan {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+}
+
+.S-Live-Camera h2 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+} 
+
+.Ul-Livecamera1, .Ul-Livecamera2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    list-style-type: disc;
+}
+
+.conteiner-getlive {
+    text-align: left;
+    padding: 0;
+}
+
+.ul-getlive {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.a-getlive {
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 10px; /* Padding untuk memberi ruang di dalam kotak */
+    width: 200px;
+    border-radius: 10px;
+}
+
+.a-getlive:hover {
+    background-color: rgb(92, 121, 216);
+    transition: .2s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 8px;
+}
+
+.a-icon {
+    text-decoration: none;
+    padding: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+
+}
+
+/* Section Penjelasan Live Camera END */
+
+/* Section Live Camera START*/
+
+.section-aplikasi {
+    background-image: url(../Images/2.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+.prewiew, .result {
+    border: 5px solid #eee;
+}
+
+.capture, .analyse {
+    background-color: #F6F6F6;
+    border-color: #205732;
+    padding: 8px;
+    text-align: center;
+    padding-right: 25px;
+    color: #205732;
+    width: 10em;
+}
+
+
+/* Section Live Camera END */
+
+/* Section Foto Galeri START*/
+
+.Container-FotoGaleri {
+    background-image: url(../Images/3.svg);
+    height: 100vh;
+}
+
+.FotoGaleri {
+    display: flex;
+}
+
+.Details-FotoGaleri {
+    column-gap: 0px;
+    display: flex;
+}
+
+.S-Foto-Galeri {
+    height: 450px;
+    width: 575px;
+
+}
+
+.imgFoto {
+    height: 450px;
+    width: 575px;
+    align-items: left;
+    justify-content: left;
+}
+
+.img-foto-galeri {
+    height: 450px;
+    width: 700px;
+}
+
+.S-Foto-Galeri h1 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    background: linear-gradient(to right, #ffffff, #a1a1f7); /* Sesuaikan warna gradasi sesuai keinginan Anda */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+}
+    
+.p-penjelasan2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+}
+
+.S-Foto-Galeri h2 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+} 
+
+.Ul-FotoGaleri1, .Ul-FotoGaleri2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    list-style-type: disc;
+}
+
+.conteiner-getfoto {
+    text-align: left;
+    padding: 0;
+}
+
+.ul-getfoto {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.a-getfoto {
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 10px; /* Padding untuk memberi ruang di dalam kotak */
+    width: 200px;
+    border-radius: 10px;
+}
+
+.a-getfoto:hover {
+    background-color: rgb(92, 121, 216);
+    transition: .2s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 8px;
+}
+
+.a-icon {
+    text-decoration: none;
+    padding: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+
+}
+
+/* Section Foto Galeri END */
+
+/* Section Analisis START */
+
+.Container-Analyse {
+    background-image: url(../Images/3.svg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #4070f4;
+    
+}
+
+.card-image .card-img2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff
+
+
+}
+
+.name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: black
+
+}
+
+.deskripsi {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+}
+
+.card {
+    border-radius: 50px 50px 25px 25px;
+    background-color: #fff;
+    width: 320px;
+
+}
+
+.slide-content {
+    margin: 0 40px;
+
+}
+
+.card-content, .image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 15px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #265df2;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 0 25px;
+    background-color: #4070f4;
+
+}
+
+.overlay::before, .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+
+}
+
+.overlay::after {
+    border-radius:0 25px 0 0;
+    background-color: #fff;
+}
+
+
+
+/* Section Analisis END */
+
+.about-section {
+    background-image: url(../Images/bgAbout.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.visi-misi-section {
+    background-image: url(../Images/bgVisiMisi.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* max-width: 100%; */
+    height: 700px;
+}
+
+.Misi .misi-text {
+    color: #FFFFFF;
+}
+
+.our-team-section {
+    background-image: url(../Images/2.png)
+
+}
+
+.our-team-section {
+    height: 100%;
+}
+
+.container-our-team {
+    background: rgba(15, 64, 31, .9);
+    text-align: center;
+    border-radius: 35px;
+    padding: 0 10px;
+}
+
+.container-our-team .member {
+    line-height: 10px;
+    color: #fff;
+    font-size: 10px;
+}

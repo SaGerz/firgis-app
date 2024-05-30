@@ -1,0 +1,19 @@
+.faq-answer1 {
+    height: 250px;
+    width: 375px;
+    margin-left:50px;
+    text-align : justify
+
+}
+
+.text-muted {
+    text-align: justify;
+}
+
+@media screen and (max-width: 476px) {
+    .faq-answer1 {
+        height: 99%;
+        max-width: 88%;
+        text-align : justify
+    }
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/3.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    background-size: cover;
+
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.nav-item {
+    color: white;
+}
+
+/* .line {
+    float: left;
+    width: 6px;
+    height: 185px;
+    border: 2px solid #fff;
+    background-color: #fff;
+} */
+
+/* Section Our Feature Start */
+
+.h1-Our-Future {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
+
+.p-Our-Future {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    margin: 80px;
+    align-items: center;
+    grid-gap: 50px;
+    justify-content: center;
+    transition: transform;
+}
+
+.konten1, .konten2 {
+    cursor: progress;
+}
+
+.grid > article:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:1000px) {
+    .grid {
+        grid-template-columns: repeat(2.1fr)
+    }
+}
+
+.img-OurF1, .img-OurF2 {
+    width: 215px;
+    height: 147px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.grid > article {
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 20px;
+    background-color: white;
+    height: 275px;
+    width: 244px;
+    padding: 15px;
+}
+
+.h1-Livecamera, .h1-FotoGaleri {
+    color: black;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.h2-Livecamera, .h2-FotoGaleri {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* Section Our Fetuare end */
+
+@media screen and (max-width: 476px) {
+    .logo {
+        width: 45px;
+    }
+
+    .h1-Our-Future {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .p-Our-Future {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+        margin: 40px;
+        align-items: center;
+        grid-gap: 50px;
+        justify-content: center;
+        transition: transform;
+        flex-wrap: wrap;
+    }
+
+    .grid > article:hover {
+        transform: scale(1.1);
+    }
+
+    .img-OurF1, .img-OurF2 {
+        width: 210px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    body {
+        overflow-y: scroll;
+    
+    }
+
+    .navbar {
+        background-color: #5FA8C4;
+    }
+    
+}

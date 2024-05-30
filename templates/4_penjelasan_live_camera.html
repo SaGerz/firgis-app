@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <title>Explanation of Live Camera feature</title>
+
+            <!-- App favicon -->
+            <link rel="shortcut icon" href="..\Static\Images\Logo Hitam.ico">
+
+            <!--CSS-->
+            <link rel="stylesheet" href="..\Static\css\penjelasan live camera.css">
+
+        </head>
+
+        <body>
+            <div class="header mt-auto py-5 px-4">
+                <!-- Navabar -->
+                <header class="header">
+                  <nav class="navbar navbar-expand-lg navbar-light fixed-top px-3 mb-4">
+                    <div class="container-fluid">
+                   
+                      <a class="navbar-brand" href="{{url_for('home')}}"><img class="logo" src="../Static/Images/Logo Hitam.png" alt="" width="60"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/tut-wuri-handayani-7783.png" alt="" width="50"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/Logo_upi.png" alt="" width="65"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/logo pkp.png" alt="" width="60"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/Kampus-Merdeka.png" alt="" width="65"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end p-4" id="navbarSupportedContent">
+                              <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('welcome')}}">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('our_feature')}}">Features</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('creator')}}">Creator</a>
+                                  </li>
+                              </ul>
+                              <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="{{url_for('penjelasan_live_camera')}}">Live Camera</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('penjelasan_foto_galeri')}}">Photo Gallery</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('details')}}">Fish Morphology</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('morfometrik')}}">Morphometrics and Meristics</a></li>
+                                        <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li><a class="dropdown-item" href="{{url_for('quiz_quizizz')}}">Quiz</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                  </nav>
+                </header>
+            <!-- navbar End -->
+
+                    <!-- Start Content-->
+                    <div class="container-fluid-custom mt-2-custom py-2-custom px-2-custom">
+                        <div class="row-custom px-2-custom pt-2-custom mt-2-custom">
+                            <div class="col-sm-12">
+                                <div class="text">
+                                    <a class="btn a-icon" href="https://wa.me/6288802022311?text=Halo%2C%20terima%20kasih%20atas%20partisipasi%20Anda%20dalam%20membantu%20saya%20mengembangkan%20media%20pembelajaran%20ini.%20Jika%20Anda%20memiliki%20saran%20atau%20masukan%20yang%20lebih%20detail%2C%20jangan%20ragu%20untuk%20menghubungi%20saya.%20Saya%20sangat%20menghargai%20kontribusi%20Anda%21"><i class="fa-regular fa-question"></i></a>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row pt-3">
+                            <div class="col-lg-5 offset-lg-1">
+                                <!-- Question/Answer -->
+                                <div>
+                                    <h1 class="faq-question1" data-wow-delay=".1s">Live Camera</h1>
+                                    <p class="paragraf1">Jelajahi ilmu pengetahunan dengan teknologi objek detection computer vision, fitur ini memungkinkan pengguna untuk melihat dan mempelajari morfologi ikan secara real-time melalui kamera perangkat mereka. Pembagunan fitur ini hanya bisa mendeteksi 5 bagian yaitu Mulut, Sirip Dada, Sirip Perut, Sirip Anal, Sirip Punggung, dan Sirip Ekor. <br> Terdapat fitur "?" agar anda dapat memberikan Saran dan Masukin dalam pembangunan fitur berikutnya.</p>
+                                    <h4 class="faq-question2" data-wow-delay=".1s">Petunjuk Penggunaan</h4>
+                                </div>
+                                <div style="display: flex">
+                                    <!--Grup Pertama-->
+                                    <div style="flex: 1;">
+                                      <ul class="Ul-Livecamera1">
+                                        <li>Pilih Fitur Live Camera</li>
+                                        <li>Izinkan Akses Kamera</li>
+                                        <li>Pusatkan Objek di Layar (Fokuskan terhadap seluruh bagian ikan)</li>
+                                      </ul>
+                                    </div>
+                                    <!--Grup Kedua-->
+                                    <div style="flex: 1;">
+                                      <ul class="Ul-Livecamera2">
+                                        <li>Mulai Deteksi</li>
+                                        <li>Eksplorasi Hasil</li>
+                                        <li>Pelajari Lebih Lanjut</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="conteiner-getlive">
+                                    <ul class="ul-getlive">
+                                    <li class="li-getlive">
+                                      <a class="btn a-getlive" href="{{url_for('live_camera')}}">Get Started</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <!--/col-md-5 -->
+        
+                            <div class="col-lg-3">
+                                <!-- Question/Answer -->
+                                <div class="img-container">
+                                    <img src="../Static/Images/Live-Details1.png" class="img-live-camera"/>
+                                </div>        
+                            </div>
+                            <!--/col-md-5-->
+                        </div>
+                        <!-- end row -->
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+         <!--Font Awesome-->
+         <script src="https://kit.fontawesome.com/7fec0a1d8d.js" crossorigin="anonymous"></script>
+         <!-- Akhir Font Awesome-->
+        
+        <!--Caveat Google 1-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--Akhir Caveat Google 1-->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  
+    </body>
+
+
+</html>

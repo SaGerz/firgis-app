@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Morfometrik</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+        <meta content="Coderthemes" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="..\Static\Images\Logo Hitam.ico">
+
+        <!-- App css -->
+        <link href="..\assets\css\icons.min.css" rel="stylesheet" type="text/css">
+        <link href="..\assets\css\app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="..\assets\css\app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+        <link href="..\Static\css\materi_2.css" rel="stylesheet" type="text/css">
+
+
+    </head>
+
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="{{url_for('home')}}" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="..\Static\Images\Logo Panjang.png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="..\Static\Images\Logo Putih (1).png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                </a>
+
+                <!-- LOGO -->
+                <a href="{{url_for('home')}}" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                        <img src="..\Static\Images\logo panjang hitam.png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="..\Static\Images\Logo Hitam.png" href="{{url_for('home')}}" alt="" height="40">
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar="">
+
+                    <!--- Sidemenu -->
+                    <ul class="side-nav">
+
+                        <li class="side-nav-title side-nav-item">Navigation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span class="badge bg-success float-end">6</span>
+                                <span> Dashboards </span>
+                            </a>
+                            <div class="collapse" id="sidebarDashboards">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('welcome')}}">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('our_feature')}}">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('creator')}}">Creator</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('penjelasan_live_camera')}}">Live Camera</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('penjelasan_foto_galeri')}}">Photo Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('details')}}">Fish Morphology</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Explanation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Mulut </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarEcommerce">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('mulut_1_2')}}">Superior Mouth</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_1_2')}}">Terminal Mouth</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_3_4')}}">Inferior Mouth</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_3_4')}}">Protrusible Mouth</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('mulut_5')}}">Sucker Mouth</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Dada </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarEmail">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Hand-like</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Spiny</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Wing-like</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Normal size</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_dada')}}">Paddle</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarProjects" aria-expanded="false" aria-controls="sidebarProjects" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Perut </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarProjects">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_perut')}}">Sucker-like pelvic fins</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_perut')}}">Thickened rays on pelvic fins</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_perut')}}">Moderate sized pelvic fins</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="{{url_for('sirip_dubur')}}" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Dubur </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Punggung </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarTasks">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Spiny and soft-rayed dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Tucked dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Locking spiny dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Very long dorsal fin</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">Three dorsal fins</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_punggung')}}">No dorsal fin</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="uil-copy-alt"></i>
+                                <span> Sirip Ekor </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarLayouts">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Rounded tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Truncated (triangular) tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Lunate (moon shaped) tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Forked tail</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Forked tail (unevenly)</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('sirip_ekor')}}">Emarginate tail</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Other</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarPages" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="mdi-ruler"></i>
+                                <span> Morfometrik & Meristik </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarPages">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('morfometrik')}}">Morfometrik</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('meristik')}}">Meristik</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Evaluation</li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarIcons" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                                <i class="mdi mdi-head-question-outline"></i>
+                                <span> Quiz </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarIcons">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a href="{{url_for('quiz_gform')}}">Google Form</a>                                    
+                                    </li>
+                                    <li>
+                                        <a href="{{url_for('quiz_quizizz')}}">Quizziz</a>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-title side-nav-item">Reference</li>
+
+                        <li class="side-nav-item">
+                            <a href="{{url_for('referensi')}}" class="side-nav-link">
+                                <i class="mdi mdi-book-open-variant"></i>
+                                <span> Referensi </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-menu float-end mb-0">
+                            <li class="notification-list">
+                                <a class="nav-link end-bar-toggle" href="javascript: void(0);">
+                                    <i class="dripicons-gear noti-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </div>
+                    <!-- end Topbar -->
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">FishMorpho</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Quiz</a></li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Quiz</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-xxl-8 col-lg-6">
+                                <!-- project card -->
+                                <!-- end card-->
+                            </div> <!-- end col -->
+
+                            <div class="col-lg-6 col-xxl-4">
+                                <!-- end card-->
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="col">
+                        <!-- project card -->                        
+                        <div class="card d-block">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="mb-4">Quiz on Fish Morphology (Quizizz)</h3>
+                                        <h5>Hey MorphoMates!</h5>
+                                        <p>Siap-siap untuk tantangan seru di kuis morfologi ikan kami! 🐟✨</p>
+                                        <p>Kuis ini dibagi menjadi 3 level yang menantang, dan semuanya bisa kamu kerjakan sendiri atau bersama dengan temanmu lewat Quizizz. Yuk, cek detailnya!</p>
+                                        <h5>🚀 Tujuan Kuis</h5>
+                                        <p>Kuis ini buat ngukur seberapa jago kamu dalam hal morfologi ikan, mulai dari dasar sampai tingkat lanjut. Jadi, siap-siap untuk mengasah otak dan keterampilan analisismu!</p>
+                                        <h5>📋 Cara Mengerjakan</h5>
+                                        <ol>
+                                            <li>Akses Link: Klik tautan Quizizz yang sudah disediakan.</li>
+                                            <li>Undang Temanmu: Gunakan fitur Quizizz untuk mengerjakan kuis bersama teman.</li>
+                                            <li>Jawab Pertanyaan: Kerjakan tiap level satu per satu.</li>
+                                            <li>Silahkan seru-seruan dengan temanmu dengan mengisi soal disetiap levelnya! 🎉</li>
+                                        </ol>
+                                        <h5>Selamat mengerjakan dan selamat bersenang-senang! 🌈🎉</h5>
+                                    </div> <!-- end col -->
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card border-secondary border">
+                                            <div class="card-body">
+                                                <h5 class="card-title">🎯 Level 1: Dasar</h5>
+                                                <p class="card-text"><p><strong>Tujuan:</strong> Menguji pengetahuan dasar tentang morfologi ikan.</p>
+                                                <p><strong>Pertanyaan:</strong> Pilihan ganda dan Isian Singkat, super mudah!</p>
+                                                <p><strong>Jumlah:</strong> 15 pertanyaan.</p></p>
+                                                <a href="https://quizizz.com/embed/quiz/6654842a6201027bfeed542f" class="btn btn-secondary btn-sm">Button</a>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+        
+                                    <div class="col-md-4">
+                                        <div class="card border-primary border">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary">🧠 Level 2: Menengah</h5>
+                                                <p class="card-text"><p><strong>Tujuan:</strong> Memahami lebih dalam tentang adaptasi ikan.</p>
+                                                <p><strong>Pertanyaan:</strong> Pilihan ganda dengan sedikit analisis.</p>
+                                                <p><strong>Jumlah:</strong> 15 pertanyaan.</p></p>
+                                                <a href="https://quizizz.com/embed/quiz/66557fb41a5ebe5cd23bdf9f" class="btn btn-primary btn-sm">Button</a>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+        
+                                    <div class="col-md-4">
+                                        <div class="card border-success border">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-success">🌟 Level 3: Lanjutan</h5>
+                                                <p class="card-text"><p><strong>Tujuan:</strong> Menantang kemampuan analisis kamu.</p>
+                                                <p><strong>Pertanyaan:</strong> Pilihan ganda dengan analisis.</p>
+                                                <p><strong>Jumlah:</strong> 15 pertanyaan.</p>
+                                                <a href="https://quizizz.com/embed/quiz/66558c33e0c718f16ef4a51a" class="btn btn-success btn-sm">Button</a>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+                                </div>
+                                <!-- end row -->
+        
+                    </div> <!-- end card-->
+                        
+                        <!-- end card-->
+                    </div> <!-- end col -->
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> © FishMorpho
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end footer-links d-none d-md-block">
+                                    <a href="..\templates\2_welcome.html">About</a>
+                                    <a href="https://wa.me/6288802022311?text=Halo%2C%20terima%20kasih%20atas%20partisipasi%20Anda%20dalam%20membantu%20saya%20mengembangkan%20media%20pembelajaran%20ini.%20Jika%20Anda%20memiliki%20saran%20atau%20masukan%20yang%20lebih%20detail%2C%20jangan%20ragu%20untuk%20menghubungi%20saya.%20Saya%20sangat%20menghargai%20kontribusi%20Anda%21">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- Right Sidebar -->
+        <div class="end-bar">
+
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="end-bar-toggle float-end">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0">Settings</h5>
+            </div>
+
+            <div class="rightbar-content h-100" data-simplebar="">
+
+                <div class="p-3">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
+                    </div>
+
+                    <!-- Settings -->
+                    <h5 class="mt-3">Color Scheme</h5>
+                    <hr class="mt-1">
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light" id="light-mode-check" checked="">
+                        <label class="form-check-label" for="light-mode-check">Light Mode</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark" id="dark-mode-check">
+                        <label class="form-check-label" for="dark-mode-check">Dark Mode</label>
+                    </div>
+       
+
+                    <!-- Width -->
+                    <h5 class="mt-4">Width</h5>
+                    <hr class="mt-1">
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check" checked="">
+                        <label class="form-check-label" for="fluid-check">Fluid</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
+                        <label class="form-check-label" for="boxed-check">Boxed</label>
+                    </div>
+        
+
+                    <!-- Left Sidebar-->
+                    <h5 class="mt-4">Left Sidebar</h5>
+                    <hr class="mt-1">
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="theme" value="default" id="default-check">
+                        <label class="form-check-label" for="default-check">Default</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="theme" value="light" id="light-check" checked="">
+                        <label class="form-check-label" for="light-check">Light</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" name="theme" value="dark" id="dark-check">
+                        <label class="form-check-label" for="dark-check">Dark</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="fixed" id="fixed-check" checked="">
+                        <label class="form-check-label" for="fixed-check">Fixed</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="condensed" id="condensed-check">
+                        <label class="form-check-label" for="condensed-check">Condensed</label>
+                    </div>
+
+                    <div class="form-check form-switch mb-1">
+                        <input class="form-check-input" type="checkbox" name="compact" value="scrollable" id="scrollable-check">
+                        <label class="form-check-label" for="scrollable-check">Scrollable</label>
+                    </div>
+
+                </div> <!-- end padding-->
+
+            </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+
+        <!-- bundle -->
+        <script src="..\assets\js\vendor.min.js"></script>
+        <script src="..\assets\js\app.min.js"></script>
+        <script src="https://kit.fontawesome.com/7fec0a1d8d.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>

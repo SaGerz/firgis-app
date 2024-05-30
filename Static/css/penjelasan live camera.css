@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color:#E2EAEE;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.nav-item {
+    color: white;
+}
+
+/* .line {
+    float: left;
+    width: 6px;
+    height: 185px;
+    border: 2px solid #fff;
+    background-color: #fff;
+} */
+.line2 {
+    float: left;
+    width: 6px;
+    height: 87px;
+    border: 2px solid #3b0606;
+    background-color: #3b0606;
+}
+
+.container-fluid-custom {
+    width: 100%;
+    padding-right: 0.5rem; /* Sesuai dengan padding px-2 */
+    padding-left: 0.5rem;  /* Sesuai dengan padding px-2 */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mt-2-custom {
+    margin-top: 0.5rem; /* mt-2 berarti margin top 0.5rem (8px) */
+}
+
+.py-2-custom {
+    padding-top: 0.5rem; /* py-2 berarti padding top 0.5rem (8px) */
+    padding-bottom: 0.5rem; /* padding bottom 0.5rem (8px) */
+}
+
+.px-2-custom {
+    padding-left: 0.5rem; /* px-2 berarti padding left 0.5rem (8px) */
+    padding-right: 0.5rem; /* padding right 0.5rem (8px) */
+}
+
+.row-custom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem; /* Adjust gutter width */
+    margin-left: -0.5rem;  /* Adjust gutter width */
+}
+
+.pt-2-custom {
+    padding-top: 0.5rem; /* pt-2 berarti padding top 0.5rem (8px) */
+}
+
+.a-get {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 15px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.a-get:hover {
+    background: #265df2;
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.paragraf1 {
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.paragraf2 {
+    text-align: justify; 
+    font-family: 'Poppins', sans-serif;
+ 
+
+}
+
+.a-icon {
+    border: none;
+    font-size: 16px;
+    color: black;
+    padding: 8px 16px;
+    text-align: right;
+    border-radius: 50%;
+    margin: 14px;
+    cursor: pointer;
+    border: 2px solid;
+    transition: all 0.3s ease;
+    
+
+}
+
+.text {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.ul-getlive {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.a-getlive {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 15px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.a-getlive:hover {
+    background: #265df2;
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center; /* Mengatur posisi horizontal ke tengah */
+    align-items: center; /* Mengatur posisi vertikal ke tengah */
+    height: 100%; /* Mengatur tinggi kontainer agar mengambil seluruh tinggi elemen induk */
+    padding-left: 300px;
+}
+
+.img-live-camera {
+    height: 450px;
+    width: 650px;
+    size: 120%;
+
+}
+
+.faq-question1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    background: linear-gradient(to right, #7f9bf7, #3333ff); /* Sesuaikan warna gradasi sesuai keinginan Anda */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+}
+
+.faq-question2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    background: linear-gradient(to right, #7f9bf7, #3333ff); /* Sesuaikan warna gradasi sesuai keinginan Anda */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 476px) {
+    .logo {
+        width: 45px;
+    }
+
+    .mt-4-custom {
+        margin-top: 1rem; /* Adjust margin top untuk mobile */
+    }
+
+    .py-4-custom {
+        padding-top: 1rem; /* Adjust padding top untuk mobile */
+        padding-bottom: 1rem; /* Adjust padding bottom untuk mobile */
+    }
+
+    .px-3-custom {
+        padding-left: 0.5rem; /* Adjust padding left untuk mobile */
+        padding-right: 0.5rem; /* Adjust padding right untuk mobile */
+    }
+
+    .px-4-custom {
+        padding-left: 0.75rem; /* Adjust padding left untuk mobile */
+        padding-right: 0.75rem; /* Adjust padding right untuk mobile */
+    }
+
+    .pt-4-custom {
+        padding-top: 0.75rem; /* Adjust padding top untuk mobile */
+    }
+
+    .mt-4-custom {
+        margin-top: 0.75rem; /* Adjust margin top untuk mobile */
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .img-live-camera {
+        height: 350px;
+        width: 450px;
+        size: 80%;
+    
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center; /* Mengatur posisi horizontal ke tengah */
+        align-items: center; /* Mengatur posisi vertikal ke tengah */
+        height: 100%; /* Mengatur tinggi kontainer agar mengambil seluruh tinggi elemen induk */
+        padding-left: 0;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    .navbar {
+        background-color: #E2EAEE;
+    }
+}

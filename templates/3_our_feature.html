@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <title>Our Feature</title>
+
+            <!-- App favicon -->
+            <link rel="shortcut icon" href="..\Static\Images\Logo Hitam.ico">
+
+            <!--CSS-->
+            <link rel="stylesheet" href="../Static/css/our feature.css">
+        </head>
+
+        <body>
+            <div class="header mt-auto py-5 px-4">
+                <!-- Navabar -->
+                <header class="header">
+                  <nav class="navbar navbar-expand-lg navbar-light fixed-top px-3 mb-4">
+                    <div class="container-fluid">
+                   
+                      <a class="navbar-brand" href="{{url_for('home')}}"><img class="logo" src="../Static/Images/Logo Hitam.png" alt="" width="60"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/tut-wuri-handayani-7783.png" alt="" width="50"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/Logo_upi.png" alt="" width="65"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/logo pkp.png" alt="" width="60"></a>
+                      <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/Kampus-Merdeka.png" alt="" width="65"></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end p-4" id="navbarSupportedContent">
+                              <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('welcome')}}">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('our_feature')}}">Features</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="{{url_for('creator')}}">Creator</a>
+                                  </li>
+                              </ul>
+                              <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="{{url_for('penjelasan_live_camera')}}">Live Camera</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('penjelasan_foto_galeri')}}">Photo Gallery</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('details')}}">Fish Morphology</a></li>
+                                        <li><a class="dropdown-item" href="{{url_for('morfometrik')}}">Morphometrics and Meristics</a></li>
+                                        <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li><a class="dropdown-item" href="{{url_for('quiz_quizizz')}}">Quiz</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                  </nav>
+                </header>
+                  <!-- navbar End -->
+
+          <!--Caveat Google 1-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <!--Akhir Caveat Google2-->
+
+      <!-- Section Our Future Start -->
+      <div class="Our-Future-Utama" id="OurFuture">
+        <div class="OurFuture-text px-4 pt-4 mt-2">
+          <div class="OurFuture-text-section px-4 pt-4 mt-4">
+            <div class="Our-Future1"> <!--Judul Laman-->
+              <h1 class="h1-Our-Future">Our Feature</h1>
+              <p class="p-Our-Future">Jelajahi ilmu pengetahuan secara interaktif dengan fitur Live Camera dan fitur Foto Galeri dengan memanfaatkan computer vision untuk mendeteksi morfologi ikan secara langsung. Temukan keseruan belajar dengan teknologi yang inovatif dan menghibur.</p>
+            </div>
+            <div class="Our-Future2">
+              <main class="grid">
+                <article class="Container-Live-Camera"> <!--Wilayah 1-->
+                  <a class="text-decoration-none text-muted" href="{{url_for('penjelasan_live_camera')}}">
+                  <img src="../Static/Images/OurFuture1.jpg" class="img-OurF1" /> <!--Live Camera-->
+                  <div class="konten1">
+                    <h1 class="h1-Livecamera">Live Camera</h1>
+                    <h2 class="h2-Livecamera">Prediksi Morfologi Menggunakan Camera Secara Langsung</h2>
+                 </div>
+                </a>
+                </article>
+                <article class="Container-Foto-Galeri"> <!--Wilayah 2-->
+                  <a class="text-decoration-none text-muted" href="{{url_for('penjelasan_foto_galeri')}}">
+                  <img src="../Static/Images/OurFuture2.jpg" class="img-OurF2" />
+                 <div class="konten2">
+                    <h1 class="h1-FotoGaleri">Foto Galeri</h1>
+                    <h2 class="h2-FotoGaleri">Prediksi Morfologi Ikan Menggunakan Foto dari Galeri </h2>
+                  </div>
+                </a>
+                </article>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section Our Future end -->
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+        </body>
+
+
+  </html>
